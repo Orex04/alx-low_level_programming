@@ -7,7 +7,7 @@
 
 void times_table(void)
 {
-	int x =; /* factor */
+	int x = 0; /* factor */
 	int y; /* count */
 	int z; /* computed value*/
 
