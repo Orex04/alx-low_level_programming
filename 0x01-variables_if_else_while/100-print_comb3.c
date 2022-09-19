@@ -12,7 +12,7 @@ int main(void)
 	while (d < 58)
 	{
 		a = 48;
-		whiel (a < 58)
+		while (a < 58)
 		{
 			if (d != a && d < a)
 			{
