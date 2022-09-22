@@ -6,6 +6,7 @@
  * @c: character string pointer
  * Return: char pointer
  */
+
 char *cap_string(char *c)
 {
 	int i = 0, j;
