@@ -9,7 +9,7 @@
  * Return: char pointer
  */
 
-char *_strncpy(char *dest, char Psrc, int n)
+char *_strncpy(char *dest, char *src, int n)
 {
 	int i, j;
 	
@@ -17,7 +17,7 @@ char *_strncpy(char *dest, char Psrc, int n)
 	{
 		if (src[i] == '\0')
 		{
-			for (j = i; j < n && dest[j] !='\0'; j++)
+			for (j = i; j < n && dest[j] != '\0'; j++)
 				dest[j] = '\0';
 			break;
 		}
