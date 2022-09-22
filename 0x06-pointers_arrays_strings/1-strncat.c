@@ -9,7 +9,6 @@
  * @n: number of chars to include from appended string
  * Return: char pointer
  */
-
 char *_strncat(char *dest, char *src, int n)
 {
 	int i = 0, j = 0;

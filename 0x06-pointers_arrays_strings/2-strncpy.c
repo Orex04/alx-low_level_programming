@@ -8,7 +8,6 @@
  * @n: number of cahrs to copy
  * Return: char pointer
  */
-
 char *_strncpy(char *dest, char *src, int n)
 {
 	int i, j;
