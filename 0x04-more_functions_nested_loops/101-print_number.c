@@ -27,7 +27,7 @@ void print_number(int n)
  *
  * Return: void
  */
-void mun_to_char(unsigned int n)
+void num_to_char(unsigned int n)
 {
 	unsigned int d = 10;
 
