@@ -11,7 +11,7 @@ void print_number(int n)
 {
 	unsigned int un = 0;
 
-	if(n < 0)
+	if (n < 0)
 	{
 		if (n > 1000000000)
 			n = -n;
@@ -31,7 +31,7 @@ void mun_to_char(unsigned int n)
 {
 	unsigned int d = 10;
 
-	if (n <d)
+	if (n < d)
 	{
 		_putchar('0' + n);
 	}
@@ -40,7 +40,7 @@ void mun_to_char(unsigned int n)
 		while (n >= d)
 		{
 			d *= 10;
-			id (d == 1000000000)
+			if (d == 1000000000)
 				break;
 		}
 		if (!(d == 1000000000) || n == 123456789)
@@ -51,6 +51,6 @@ void mun_to_char(unsigned int n)
 			d /= 10;
 			_putchar('0' + (n / d) % 10);
 		}
-		_putchar('0'+ n% 10);
+		_putchar('0' + n % 10);
 	}
 }
