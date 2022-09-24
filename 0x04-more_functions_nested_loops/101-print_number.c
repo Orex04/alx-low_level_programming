@@ -19,6 +19,11 @@ void print_number(int n)
 		_putchar(45);
 		num_to_char(n);
 	}
+	else
+	{
+		un = n;
+		num_to_char(un);
+	}
 }
 
 /**
