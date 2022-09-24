@@ -14,7 +14,7 @@ void print_line(int n);
 void print_diagonal(int n);
 void print_square(int size);
 void print_triangle(int size);
-void num_to_char(unsigned int);
+void num_to_char(unsigned int n);
 void print_number(int n);
 
 
