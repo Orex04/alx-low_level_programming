@@ -13,7 +13,7 @@ void print_number(int n)
 
 	if (n < 0)
 	{
-		if (n > 1000000000)
+		if (n < 1000000000)
 			n = -n;
 		un = n;
 		_putchar(45);
