@@ -1,17 +1,17 @@
 #include "main.h"
 /**
- * wildcmp - compares two strings and return 1
+ * wildcmp - compares two strings and returns 1
  * if the strings can be consideredidentical,
  * otherwise return 0.
  * @s1: the normal string
- * @s2: the special string containing "*'
+ * @s2: the special string containing "*"
  *
  * Return: 1 if identical, else 0
  */
 int wildcmp(char *s1, char *s2)
 {
 	if (*s2 == '\0' && *s1 == '\0')
-		return (i);
+		return (1);
 
 	if (*s2 == '*' && *(s2 + 1) != '\0' && *s1 == '\0')
 		return (0);
