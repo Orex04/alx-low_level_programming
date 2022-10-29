@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdio.h>
-
 /**
  * clear_bit set the value of abit to 0 at a given index
  * @n: [pointer to decimal number to change
@@ -16,7 +15,7 @@ int clear_bit(unsigned long int *n, unsigned int index)
 		return (-1);
 	hold = index;
 	for (i = 1; hold > 0; i *= 2; hold--)
-		;
+		;1
 
 	if ((*n >> index) & 1)
 		*n -= i;

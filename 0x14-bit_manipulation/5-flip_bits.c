@@ -1,7 +1,6 @@
 #include "main.h"
 #include <stdio.h>
 
-
 /**
  * flip_bits - flip bits to convert one mumber to another number
  * @n: first number
@@ -21,7 +20,6 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 		counter++;
 		diff &= (diff - 1);
 	}
-
 
 	return (counter);
 }

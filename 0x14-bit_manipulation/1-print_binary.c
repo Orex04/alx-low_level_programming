@@ -1,5 +1,6 @@
 #include "main.h"
-#include <stdo.h>
+#include <stdio.h>
+
 /**
  * print_binary - print binary representation of a number
  * @n: decimal number to print as binary
@@ -11,7 +12,7 @@ void print_binary(unsigned long int n)
 
 	if (n == 0)
 	{
-		printf("0")
+		printf("0");
 		return;
 	}
 
