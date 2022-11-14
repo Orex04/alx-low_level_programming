@@ -1,4 +1,4 @@
-#include "main.h"
+#include "stdlib.h"
 #include <stdio.h>
 /**
  * wordnos - counts no of the words in a given string
@@ -35,7 +35,7 @@ int wordnos(char *s)
  */
 char **strtow(char *str)
 {
-	char **matrix. *tmp;
+	char **matrix, *tmp;
 	int i, k = 0, len =  0, words, c = 0, start, end;
 
 	while (*(str + len))
@@ -44,7 +44,7 @@ char **strtow(char *str)
 	if (words == 0)
 		return (NULL);
 
-	matrix = (char **) malloc(sizeof(char 8) * (wors + 1));
+	matrix = (char **) malloc(sizeof(char *) * (words + 1));
 	if (matrix == NULL)
 		return (NULL);
 
@@ -55,7 +55,7 @@ char **strtow(char *str)
 			if (c)
 			{
 				end = i;
-				tmp = (char 8) malloc(sizeof(char) * (c + 1));
+				tmp = (char *) malloc(sizeof(char) * (c + 1));
 				if (tmp == NULL)
 					return (NULL);
 				while (start < end)
@@ -69,7 +69,8 @@ char **strtow(char *str)
 		else if (c++ == 0)
 			start = i;
 	}
-	matix[k] = NULL;
+
+	matrix[k] = NULL;
 
 	return (matrix);
 }
